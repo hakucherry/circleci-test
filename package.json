@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --ci -testResultsProcessor='jest-junit' --all"
+    "test": "jest --coverage --ci -testResultsProcessor='jest-junit'"
   },
   "repository": {
     "type": "git",

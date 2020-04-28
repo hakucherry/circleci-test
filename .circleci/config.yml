@@ -6,6 +6,19 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - run:
+          name: "Fetch server"
+          command: git clone https://github.com/hakucherry/circleci-serv.git
+      - run:
+          name: "Build server1"
+          command: cd circleci-serv
+      - run:
+          name: "Build server2"
+          command: npm install
+      - run:
+          name: "Run server"
+          command: npm start"
+      - run: cd ~
       - run: mkdir -p reports/junit
       - run: npm install
       - run:
