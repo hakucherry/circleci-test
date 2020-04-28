@@ -1,0 +1,26 @@
+{
+  "name": "circleci-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --ci -testResultsProcessor='jest-junit'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakucherry/circleci-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakucherry/circleci-test/issues"
+  },
+  "homepage": "https://github.com/hakucherry/circleci-test#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "jest-junit": "^10.0.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.8.3"
+  }
+}
