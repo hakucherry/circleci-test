@@ -7,5 +7,5 @@ it('always!', () => {
 
 // The assertion for a promise must be returned.
 it('add!', () => {
-  expect(add(2, 5)).toBe(7);
+  expect(add(2, 5)).toBe(6);
 });
