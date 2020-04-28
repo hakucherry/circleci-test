@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: mkdir -p repoerts/junit
+      - run: mkdir -p reports/junit
       - run: npm install
       - run:
           name: "Typescript Teset Suite"
