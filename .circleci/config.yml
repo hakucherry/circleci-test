@@ -17,7 +17,7 @@ jobs:
           command: npm install
       - run:
           name: "Run server"
-          command: npm start"
+          command: npm start
       - run: cd ~
       - run: mkdir -p reports/junit
       - run: npm install
