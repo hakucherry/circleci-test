@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="2" time="7.002">
-  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2020-04-28T14:14:49" time="6.18" tests="2">
-    <testcase classname=" always!" name=" always!" time="5.002">
+<testsuites name="jest tests" tests="2" failures="2" time="7.054">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2020-04-28T14:32:18" time="6.223" tests="2">
+    <testcase classname=" always!!" name=" always!!" time="5.004">
       <failure>: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: 
     at new Spec (D:\source\circleci-test\node_modules\jest-jasmine2\build\jasmine\Spec.js:116:22)
     at new Spec (D:\source\circleci-test\node_modules\jest-jasmine2\build\setup_jest_globals.js:78:9)
@@ -16,12 +16,12 @@
     at jasmine2 (D:\source\circleci-test\node_modules\jest-jasmine2\build\index.js:215:13)
     at runTestInternal (D:\source\circleci-test\node_modules\jest-runner\build\runTest.js:373:22)</failure>
     </testcase>
-    <testcase classname=" add!" name=" add!" time="0.003">
+    <testcase classname=" add!" name=" add!" time="0.006">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 3
 Received: 7
-    at Object.&lt;anonymous&gt;.it (D:\source\circleci-test\test\jest.test.ts:23:21)
+    at Object.&lt;anonymous&gt;.it (D:\source\circleci-test\test\jest.test.ts:22:21)
     at Object.asyncJestTest (D:\source\circleci-test\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:100:37)
     at resolve (D:\source\circleci-test\node_modules\jest-jasmine2\build\queueRunner.js:45:12)
     at new Promise (&lt;anonymous&gt;)

@@ -3,10 +3,9 @@ import { add } from '../src/adder';
 const ws = new WebSocket('ws://localhost:8787');
 
 // The assertion for a promise must be returned.
-it('always!', () => {
+it('always!!', () => {
   const promise = new Promise((resolve: any, reject: any) => {
     ws.onmessage = (e: MessageEvent) => {
-      console.log(e.data);
       resolve(e.data);
     }
   }).then(response => {
