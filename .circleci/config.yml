@@ -16,5 +16,6 @@ jobs:
             JEST_JUNIT_OUTPUT_NAME: "js-test-results.xml"
       - store_test_results:
           path: reports/junit
+          path: coverage
       - store_artifacts:
           path: reports/junit
