@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --ci -testResultsProcessor='jest-junit' --all"
+    "test": "jest --coverage --ci -testResultsProcessor='jest-junit' --all"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,26 @@
     "@types/jest": "^25.2.1",
     "jest": "^25.4.0",
     "jest-junit": "^10.0.0",
+    "ts-jest": "^25.4.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.8.3"
   },
   "jest": {
-    "reporters": ["default", "jest-junit"]
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts", "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "enableTsDiagnostics": true
+      }
+    }
   }
 }
