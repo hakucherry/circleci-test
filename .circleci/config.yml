@@ -10,15 +10,11 @@ jobs:
           name: "Fetch server"
           command: git clone https://github.com/hakucherry/circleci-serv.git
       - run:
-          name: "Build server1"
-          command: cd circleci-serv
-      - run:
           name: "Build server2"
-          command: npm install
+          command: npm install --prefix circleci-serv
       - run:
           name: "Run server"
-          command: npm start
-      - run: cd ~
+          command: npm start --prefix circleci-serv
       - run: mkdir -p reports/junit
       - run: npm install
       - run:
